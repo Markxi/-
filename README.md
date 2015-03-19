@@ -45,10 +45,10 @@ onmousedown的时候获取事件对象，列下标，鼠标坐标，当前触发
 onmousemove移动计算鼠标下标，控制DOM元素BOX不溢出，进行判断。
 
 
-<script type="javascript">
+```javascript
   document.onselectstart=function(){return false};       
   window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();  
-</script>
+```
 
 
 上面代码在移动的时候不要选中被移动的元素和其他的元素。
